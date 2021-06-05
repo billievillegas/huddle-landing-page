@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Violet);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  height: 100px;
+  margin-left: 30px;
+}
+.showcase img {
+  width: 80%;
+  padding: 10px 30px;
+}
+.details {
+  padding: 30px;
+}
+
+.details h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+
+.details button {
+  width: 220px;
+  padding: 15px 0;
+  border-radius: 40px;
+  background-color: #fff;
+  color: var(--Violet);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.details button:hover {
+  background-color: var(--Soft-Magenta);
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.social li {
+  margin: 10px;
+}
+
+ion-icon {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 70%;
+  padding: 8px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+ion-icon:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(230, 5%, 56%);
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    text-align: left;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .details {
+    padding: 40px;
+  }
+  .details h1 {
+    font-weight: 600px;
+    font-size: 2em;
+  }
+
+  .details p {
+    font-size: 1.2em;
+  }
+
+  .details button {
+    font-size: 1.3em;
+  }
+
+  .showcase img {
+    width: 50vw;
+    padding: 10px 30px;
+  }
+
+  .social ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  ion-icon {
+    font-size: 2.5em;
+  }
+}
